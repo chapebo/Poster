@@ -33,6 +33,6 @@ CREATE TABLE Bookings (
     contactName     VARCHAR(200),
     contactEmail    VARCHAR(255),
     contactPhone    VARCHAR(20),
-    FOREIGN KEY (userId) REFERENCES UserAdmin(UniqueID),
+    FOREIGN KEY (userId) REFERENCES User(UniqueID),
     FOREIGN KEY (eventId) REFERENCES Events(UniqueID)
 );
