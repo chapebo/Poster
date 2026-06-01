@@ -7,6 +7,7 @@ CREATE TABLE User (
     phone           VARCHAR(20),
     password        VARCHAR(255) NOT NULL,
     avatar          VARCHAR(500),
+    role            ENUM('user', 'admin') DEFAULT 'user'
 );
 
 CREATE TABLE Events (
